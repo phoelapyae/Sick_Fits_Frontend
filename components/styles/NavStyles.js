@@ -13,6 +13,7 @@ const NavStyles = styled.ul`
     align-items: center;
     position: relative;
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 900;
     font-size: 1em;
     background: none;
@@ -25,7 +26,7 @@ const NavStyles = styled.ul`
     &:before {
       content: '';
       width: 2px;
-      background: var(--lightGray);
+      background: var(--lightGrey);
       height: 100%;
       left: 0;
       position: absolute;
@@ -48,7 +49,6 @@ const NavStyles = styled.ul`
     &:hover,
     &:focus {
       outline: none;
-      text-decoration:none;
       &:after {
         width: calc(100% - 60px);
       }
@@ -58,7 +58,7 @@ const NavStyles = styled.ul`
     }
   }
   @media (max-width: 1300px) {
-    border-top: 1px solid var(--lightGray);
+    border-top: 1px solid var(--lightGrey);
     width: 100%;
     justify-content: center;
     font-size: 1.5rem;
