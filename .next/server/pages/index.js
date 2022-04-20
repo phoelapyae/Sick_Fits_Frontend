@@ -23,7 +23,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* reexport safe */ _products__WEBPACK_IMPORTED_MODULE_0__.default; }
 /* harmony export */ });
-/* harmony import */ var _products__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./products */ "./pages/products.js");
+/* harmony import */ var _products__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./products */ "./pages/products/index.js");
 
 
 /***/ }),
@@ -72,6 +72,28 @@ module.exports = require("next/dist/next-server/lib/router/utils/get-asset-path-
 
 /***/ }),
 
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = require("next/head");;
+
+/***/ }),
+
+/***/ "prop-types":
+/*!*****************************!*\
+  !*** external "prop-types" ***!
+  \*****************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = require("prop-types");;
+
+/***/ }),
+
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -112,7 +134,7 @@ module.exports = require("styled-components");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-var __webpack_exports__ = __webpack_require__.X(0, ["vendors-node_modules_next_link_js","pages_products_js"], function() { return __webpack_exec__("./pages/index.js"); });
+var __webpack_exports__ = __webpack_require__.X(0, ["vendors-node_modules_next_link_js","components_Pagination_js","pages_products_index_js"], function() { return __webpack_exec__("./pages/index.js"); });
 module.exports = __webpack_exports__;
 
 })();
