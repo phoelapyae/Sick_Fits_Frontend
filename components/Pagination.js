@@ -24,7 +24,7 @@ export default function Pagination({ page }) {
   return (
     <PaginationStyles>
       <Head>
-        <title>Sick Fits - page of {page} ___</title>
+        <title>Sick Fits - page of {page}</title>
       </Head>
       <Link href={`/products/${page - 1}`}>
         <a aria-disabled={page <= 1}>⬅️ Prev</a>
