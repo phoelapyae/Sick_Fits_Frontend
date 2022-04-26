@@ -1,5 +1,4 @@
-import { useQuery } from '@apollo/client';
-import gql from 'graphql-tag';
+import { gql, useQuery } from '@apollo/client';
 
 export const CURRENT_USER_QUERY = gql`
   query {
@@ -13,7 +12,7 @@ export const CURRENT_USER_QUERY = gql`
   }
 `;
 
-export default function useUser() {
+export function useUser() {
   const { data } = useQuery(CURRENT_USER_QUERY);
-  return data?._authenticatedItem;
+  return data?.authenticatedItem;
 }
